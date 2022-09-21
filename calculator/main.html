@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/de76e08cdb.js" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="screen">
+            <span id="result"></span>
+        </div>
+        <div class="operation">
+            <div class="grid-container">
+                <button onclick="operation('+')">+</button>
+                <button onclick="operation('-')">-</button>
+                <button onclick="operation('÷')">÷</button>
+                <button onclick="operation('*')">x</button>
+            </div>
+        </div>
+        <div class="number">
+            <div class="grid-container">
+                <button onclick="operation('7')">7</button>
+                <button onclick="operation('8')">8</button>
+                <button onclick="operation('9')">9</button>
+                <button onclick="reset()">C</button>
+                <button onclick="operation('4')">4</button>
+                <button onclick="operation('5')">5</button>
+                <button onclick="operation('6')">6</button>
+                <button id="equalTo" onclick="result()">=</button>
+                <button onclick="operation('1')">1</button>
+                <button onclick="operation('2')">2</button>
+                <button onclick="operation('3')">3</button>
+                <button id="zeroButton" onclick="operation('0')">0</button>
+                <button onclick="operation('.')">.</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/mraza30" target="_blank">
+            <i class="fa-brands fa-github fa-7x"></i>
+        </a>
+    </div>
+</body>
+
+</html>

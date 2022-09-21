@@ -1,0 +1,98 @@
+.end {
+    background-color: white;
+}
+
+.end-bg {
+    padding: 5em 2em 5em 2em;
+    background-image: url(./gallery/veg-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #7287AE;
+}
+
+.end-bg>h1 {
+    margin-bottom: 1em;
+    font-size: 3rem;
+}
+
+.end-bg>p {
+    font-size: 1.1rem;
+    margin-bottom: 3em;
+}
+
+/* Quote */
+
+.quote,
+.quote-bg {
+    position: relative;
+    text-align: center;
+    background-color: #e3ecc2;
+    color: #7287AE;
+}
+
+.quote-bg {
+    padding: 3em 2em 3em 2em;
+}
+
+.quote-bg>h1 {
+    font-size: 3rem;
+}
+
+.quote-bg>p{
+    font-size: 1.1rem;
+}
+
+.quote-bg>p+h1{
+    margin: 1em 0 1em 0;
+}
+
+.design-svg-2 {
+    position: relative;
+    background-color: #7287AE;
+    padding: 10em 0 4em 0;
+}
+.footer{
+    color: white;
+    padding: 2em 2em 0 2em;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.foot-item{
+    max-width: 50%;
+}
+.foot-item-flex{
+    display: flex;
+    gap: 3em;
+}
+
+.fif-item-1>h1{
+    font-weight: normal;
+    font-size: 1.75rem;
+}
+
+@media (max-width:800px)
+{
+    .footer-flex{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .foot-item{
+        max-width: 100%;
+        text-align: center;
+    }
+    .foot-item-flex{
+        gap: 0;
+        justify-content: space-between;
+        text-align: justify;
+    }
+}
+@media (max-width:450px)
+{
+    .fif-item-1>h1{
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+}

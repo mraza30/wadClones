@@ -1,0 +1,61 @@
+.header {
+    padding: 2em 2em 0 2em;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo>img {
+    width: 15em;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 2em;
+}
+
+.menu>a {
+    align-self: center;
+    font-size: 1.25rem;
+}
+/* MAIN DIV */
+.main {
+    height: auto;
+    padding: 3em 2em 3em 2em;
+    text-align: center;
+    color: white;
+}
+
+.main>h1{
+    font-size: 5rem;
+}
+
+.main>p{
+    font-size: 1.5rem;
+}
+
+@media (max-width:699px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:382px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:360px) {
+    .main>h1{
+        font-size: 3rem;
+    }
+    .main>p{
+        font-size: 1.25rem;
+    }
+}
