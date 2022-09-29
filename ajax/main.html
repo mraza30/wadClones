@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="button">Click Me</button>
+    <br />
+    <h1>Github Users</h1>
+    <div id="users" style="display:flex; flex-wrap: wrap; justify-content: space-around;"></div>
+    <script>
+      document
+        .getElementById("button")
+        .addEventListener("click", addData, { once: true });
+      async function addData() {
+        const users = await fetch("https://api.github.com/users").then((res) =>
+          res.json()
+        );
+        let output = "";
+        for (i in users) {
+          output += `<div style="display:flex; padding:1em">
+                    <img src="${users[i].avatar_url}" width="70" height="70" ">
+                    <ul>
+                        <li>ID ${users[i].id}</li>
+                        <li>Login ${users[i].login}</li>
+                    </ul>
+                </div>`;
+        }
+        document.getElementById('users').innerHTML = output;
+      }
+    </script>
+  </body>
+</html>
